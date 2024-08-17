@@ -153,6 +153,9 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
